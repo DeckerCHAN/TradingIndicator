@@ -1,18 +1,21 @@
 package com.deckerchan.tradingIndicator.api;
 
 
+import core.Engine;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 
 public class APIManager extends HttpServlet {
 
+    private Engine engine;
 
     public APIManager() {
         super();
+        this.engine = Engine.getEngine();
     }
 
     @Override
@@ -22,17 +25,13 @@ public class APIManager extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.setContentType("text/html");
-        PrintWriter out = resp.getWriter();
-
-        out.println("test message");
-        out.flush();
-        out.close();
-
+        super.doGet(req, resp);
+        //TODO:Customer not support message.
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String requestURI = req.getRequestURI();
         super.doPost(req, resp);
     }
 }
