@@ -1,8 +1,6 @@
 package com.deckerchan.tradingIndicator.api;
 
 
-import core.Engine;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -11,11 +9,11 @@ import java.io.IOException;
 
 public class APIEntryPoint extends HttpServlet {
 
-    private Engine engine;
+    private APIManager manager;
 
     public APIEntryPoint() {
         super();
-        this.engine = Engine.getEngine();
+        this.manager = APIManager.getManager();
     }
 
     @Override

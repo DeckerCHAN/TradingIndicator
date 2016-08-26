@@ -1,6 +1,7 @@
-package core;
+package com.deckerchan.tradingIndicator.core;
 
 public final class Engine {
+
 
     private static Engine _instance;
 
@@ -14,5 +15,13 @@ public final class Engine {
         }
 
         return _instance;
+    }
+
+    public void run() {
+
+    }
+
+    public void stop() {
+
     }
 }
