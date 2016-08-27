@@ -1,0 +1,11 @@
+language: java
+
+jdk:
+  - openjdk8
+  - oraclejdk8
+
+env: GRADLE_OPTS="-Xms200M -Xmx500M"
+
+notifications:
+  email:
+    - DeckerCHAN@gmail.com
