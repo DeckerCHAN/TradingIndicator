@@ -1,13 +1,13 @@
 package com.deckerchan.tradingIndicator.api;
 
-import java.util.HashMap;
+import java.util.Hashtable;
 
 public final class APIManager {
     private static APIManager manager;
-    private HashMap<String, APIBase> APIMap;
+    private Hashtable<String, APIBase> APIMap;
 
     private APIManager() {
-        this.APIMap = new HashMap<String, APIBase>();
+        this.APIMap = new Hashtable<String, APIBase>();
     }
 
     public static APIManager getManager() {
@@ -17,20 +17,26 @@ public final class APIManager {
         return manager;
     }
 
-    public HashMap<String, APIBase> getAPIMap() {
+    private Hashtable<String, APIBase> getAPIMap() {
         return APIMap;
     }
 
-    private void setAPIMap(HashMap<String, APIBase> APIMap) {
+    private void setAPIMap(Hashtable<String, APIBase> APIMap) {
         this.APIMap = APIMap;
     }
 
-    public void registerAPI(String key, APIBase api) {
-        if(this.getAPIMap().containsKey(key))
-        {
+    public void registerAPI(String path, APIBase api) {
+        if (this.getAPIMap().containsKey(path)) {
             throw new RuntimeException("Key already exists!");
         }
-        this.getAPIMap().put(key, api);
+        this.getAPIMap().put(path, api);
+    }
+
+    public APIBase getAPI(String path) throws APINotFoundException {
+        if (!this.getAPIMap().contains(path)) {
+            throw new APINotFoundException(path);
+        }
+        return this.getAPIMap().get(path);
     }
 
 

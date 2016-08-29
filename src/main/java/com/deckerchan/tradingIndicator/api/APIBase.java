@@ -1,5 +1,11 @@
 package com.deckerchan.tradingIndicator.api;
 
-public abstract class APIBase {
+import com.deckerchan.tradingIndicator.entities.protocol.Result;
 
+public interface APIBase {
+    void execute();
+
+    Result getResult();
+
+    void selfRegister();
 }

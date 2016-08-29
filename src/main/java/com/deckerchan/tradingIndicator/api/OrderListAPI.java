@@ -1,4 +1,20 @@
 package com.deckerchan.tradingIndicator.api;
 
-public class OrderListAPI extends APIBase {
+import com.deckerchan.tradingIndicator.entities.protocol.Result;
+
+class OrderListAPI implements APIBase {
+    @Override
+    public void execute() {
+
+    }
+
+    @Override
+    public Result getResult() {
+        return null;
+    }
+
+    @Override
+    public void selfRegister() {
+
+    }
 }
