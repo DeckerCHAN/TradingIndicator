@@ -18,6 +18,6 @@ public class Login implements APIBase {
 
     @Override
     public void selfRegister() {
-       // APIManager.getManager().registerAPI();
+        APIManager.getManager().registerAPI("login",this);
     }
 }
