@@ -1,12 +1,11 @@
 package com.deckerchan.tradingIndicator.core;
 
+import com.deckerchan.tradingIndicator.Order.OrderManager;
 import com.deckerchan.tradingIndicator.utils.AchieveFileUtils;
 import org.apache.commons.configuration.Configuration;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.core.config.ConfigurationSource;
-import org.apache.logging.log4j.core.config.Configurator;
 
 public final class Engine {
 

@@ -1,4 +1,4 @@
-package com.deckerchan.tradingIndicator.core;
+package com.deckerchan.tradingIndicator.Order;
 
 import com.deckerchan.tradingIndicator.entities.order.Order;
 import com.deckerchan.tradingIndicator.entities.account.User;

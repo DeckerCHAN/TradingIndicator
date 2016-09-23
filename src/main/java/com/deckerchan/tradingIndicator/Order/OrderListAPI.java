@@ -1,10 +1,15 @@
-package com.deckerchan.tradingIndicator.api;
+package com.deckerchan.tradingIndicator.Order;
 
+import com.deckerchan.tradingIndicator.api.APIBase;
 import com.deckerchan.tradingIndicator.entities.protocol.Result;
 
+import java.util.Map;
+
 class OrderListAPI implements APIBase {
+
+
     @Override
-    public void execute() {
+    public void execute(Map<String, String[]> args) {
 
     }
 
