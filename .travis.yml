@@ -10,3 +10,4 @@ script: gradle clean build
 notifications:
   email:
     - DeckerCHAN@gmail.com
+  on_success: always
