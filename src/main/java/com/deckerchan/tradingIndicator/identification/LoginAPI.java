@@ -1,7 +1,24 @@
 package com.deckerchan.tradingIndicator.identification;
 
-/**
- * Created by deckerchan on 24/09/16.
- */
-public class LoginAPI {
+import com.deckerchan.tradingIndicator.api.APIBase;
+import com.deckerchan.tradingIndicator.entities.protocol.Result;
+
+import java.util.Map;
+
+
+public class LoginAPI  implements APIBase{
+    @Override
+    public void execute(Map<String, String[]> args) {
+
+    }
+
+    @Override
+    public Result getResult() {
+        return null;
+    }
+
+    @Override
+    public void selfRegister() {
+
+    }
 }
