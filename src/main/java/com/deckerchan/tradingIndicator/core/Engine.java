@@ -1,6 +1,6 @@
 package com.deckerchan.tradingIndicator.core;
 
-import com.deckerchan.tradingIndicator.Order.OrderManager;
+import com.deckerchan.tradingIndicator.order.OrderManager;
 import com.deckerchan.tradingIndicator.utils.AchieveFileUtils;
 import org.apache.commons.configuration.Configuration;
 import org.apache.commons.configuration.PropertiesConfiguration;
