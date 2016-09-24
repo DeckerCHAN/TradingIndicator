@@ -1,4 +1,4 @@
-package com.deckerchan.tradingIndicator.Order;
+package com.deckerchan.tradingIndicator.order;
 
 import com.deckerchan.tradingIndicator.api.APIBase;
 import com.deckerchan.tradingIndicator.entities.protocol.Result;
