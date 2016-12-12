@@ -2,7 +2,7 @@ package com.deckerchan.tradingIndicator.api;
 
 
 import com.deckerchan.tradingIndicator.PresetConfiguration;
-import com.deckerchan.tradingIndicator.entities.protocol.Result;
+import com.deckerchan.tradingIndicator.protocol.Result;
 import com.google.gson.Gson;
 
 import javax.servlet.ServletException;

@@ -1,7 +1,7 @@
 package com.deckerchan.tradingIndicator.identification;
 
 import com.deckerchan.tradingIndicator.api.APIBase;
-import com.deckerchan.tradingIndicator.entities.protocol.Result;
+import com.deckerchan.tradingIndicator.protocol.Result;
 
 import java.util.Map;
 
