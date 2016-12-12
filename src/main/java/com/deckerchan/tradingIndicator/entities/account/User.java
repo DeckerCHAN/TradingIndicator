@@ -7,4 +7,5 @@ public final class User {
     public String userName;
     public UUID userID;
     public LocalDateTime createTime;
+    public LocalDateTime lastActiveTime;
 }

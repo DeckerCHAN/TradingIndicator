@@ -1,4 +1,4 @@
-package com.deckerchan.tradingIndicator.identification;
+package com.deckerchan.tradingIndicator.api.identification;
 
 import com.deckerchan.tradingIndicator.api.APIBase;
 import com.deckerchan.tradingIndicator.protocol.Result;
@@ -6,7 +6,10 @@ import com.deckerchan.tradingIndicator.protocol.Result;
 import java.util.Map;
 
 
-public class LoginAPI  implements APIBase{
+public class Login implements APIBase {
+
+
+
     @Override
     public void execute(Map<String, String[]> args) {
 
